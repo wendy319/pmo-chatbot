@@ -1,3 +1,4 @@
+// const WEBHOOK_URL = "const WEBHOOK_URL = "https://webhook-alpha-explore.digibox.ai/webhook/ce1e4dd5-a036-47c6-a79e-434deff91aaf"; 
 const WEBHOOK_URL = "const WEBHOOK_URL = "https://webhook-alpha-explore.digibox.ai/webhook/ce1e4dd5-a036-47c6-a79e-434deff91aaf"; 
 
 const chatWindow = document.getElementById("chat-window");
@@ -44,6 +45,7 @@ sendBtn.addEventListener("click", sendMessage);
 userInput.addEventListener("keypress", e => {
   if (e.key === "Enter") sendMessage();
 });
+
 
 
 
