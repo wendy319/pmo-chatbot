@@ -4,6 +4,15 @@ const chatWindow = document.getElementById("chat-window");
 const sendBtn = document.getElementById("send-btn");
 const userInput = document.getElementById("user-input");
 
+sendBtn.addEventListener("click", sendMessage);
+
+userInput.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    sendMessage();
+  }
+});
+
 function addMessage(text, sender) {
   const msg = document.createElement("div");
   msg.classList.add("message", sender);
@@ -35,6 +44,7 @@ sendBtn.addEventListener("click", sendMessage);
 userInput.addEventListener("keypress", e => {
   if (e.key === "Enter") sendMessage();
 });
+
 
 
 
